@@ -46,7 +46,8 @@ set(node_plugins "")
 # -------------------------------------------------------------------
 add_library(p1 SHARED
             src/p1_clear.cpp)
-
+   
+target_compile_definitions(p1 PRIVATE "SOFTWARE_TRAINING_BUILDING_DLL")
 ament_target_dependencies(p1
   "rclcpp"
   "rclcpp_components"

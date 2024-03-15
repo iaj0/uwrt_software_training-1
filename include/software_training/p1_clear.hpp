@@ -17,6 +17,11 @@ class p1_clear : public rclcpp::Node {
         void kill(); // function that kills all nodes
         // complete this code
 
+        //all the turtles
+        std::vector<std::string> turtle_names;
+
+        rclcpp::Client<turtlesim::srv::Kill>::SharedPtr client;
+
 };
 
 } // namespace composition
