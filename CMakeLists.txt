@@ -57,7 +57,7 @@ ament_target_dependencies(p1
 rclcpp_components_register_nodes(p1 "composition::p1_clear")
 set(node_plugins "${node_plugins}composition::p1_clear;$<TARGET_FILE:p1>\n")
 
-# -------------------------------------------------------------------
+# ------------------------------------------------------------------
 # P2
 # -------------------------------------------------------------------
 add_library(p2 SHARED

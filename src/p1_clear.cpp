@@ -1,5 +1,4 @@
 #include "../include/software_training/p1_clear.hpp"
-using namespace std::literals::chrono_literals;
 
 namespace composition {
 
@@ -15,18 +14,6 @@ p1_clear::p1_clear(const rclcpp::NodeOptions &options)
 }
 
 void p1_clear::kill() {
-    // complete this code
-      // check if service exists
-        // if (!client->wait_for_service(2s)) {
-        //     if (!rclcpp::ok()) {
-        //     RCLCPP_ERROR(this->get_logger(),
-        //                 "Interrupted while waiting for service. Exiting!");
-        //     return;
-        //     }
-        //     RCLCPP_INFO(this->get_logger(), "Service not available after waiting");
-        //     return;
-        // }
-        // RCLCPP_INFO(this->get_logger(), "TURTLES KILLED.");
 
     // iterate through all the turtles
     for (auto name : turtle_names) {
